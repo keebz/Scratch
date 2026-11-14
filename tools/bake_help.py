@@ -19,7 +19,9 @@ COLS = [
      ("p", "Strip Zone (SETUP) = Whole strip, Bottom half or Top half. Throw = how far the record moves for one pull. Smooth and Lead = how soft and how quick the strip follows your finger."),
      ("h", "PADS A01 - A08"),
      ("p", "Each pad holds one sample. Hit a pad to put its sample on the record (at its sticker if it has one). Hit the same pad again and it only works the cut. While held, the pad opens the crossfader; the harder you hit, the faster it opens."),
-     ("p", "Pad 12 toggles the HAMSTER switch, which reverses the crossfader.")],
+     ("p", "Pad 12 toggles the HAMSTER switch, which reverses the crossfader."),
+     ("h", "BY KEEBZ"),
+     ("l", "Instagram:  @leekebler"), ("l", "GitHub:  github.com/keebz"), ("l", "Web:  Keebz.com")],
     [("h", "SAMPLE LIST"),
      ("p", "Turn the encoder to scroll one sample per notch. The list shows the files in the plugin's Content/Samples folder."),
      ("p", "PREVIEW  plays the selected sample on channel B. Press again to stop."),
@@ -32,14 +34,15 @@ COLS = [
      ("p", "Two channels: A is the deck, B is the loop. Each has GAIN, HI, MID and LOW with the knob at 12 o'clock = flat (0 dB). Gain goes down to silent, EQ to kill. The meters show the level. The crossfader cap shows the cut."),
      ("p", "The MASTER level is on the SETUP tab.")],
     [("h", "SET THE MPC FIRST  (IMPORTANT)"),
-     ("p", "The pads only line up with the plugin when the MPC's pad notes are CHROMATIC: set the Pad Mode / Note layout of the program to Chromatic, with the first pad on the Shot Base note (SETUP, default 36). Pads A01-A08 are then the notes 36-43 and the hamster pad is note 47."),
-     ("p", "If a pad does nothing, check the note it sends and set Shot Base / Ham Note on the SETUP tab to match."),
-     ("h", "PAD LAYOUT"),
-     ("p", "A01-A04 are the bottom row of the MPC pads, A05-A08 the row above - the same as on the screen."),
+     ("p", "1. Pad notes CHROMATIC, first pad on the Shot Base note (SETUP, default 36). A01-A08 are then notes 36-43 (A01-A04 the bottom row, A05-A08 the row above) and the hamster pad is note 47."),
+     ("p", "2. Pad BANK B."),
+     ("p", "3. Touch strip mode PITCH BEND (Strip Src on SETUP = Bend)."),
      ("h", "RECORDING IN THE SEQUENCER"),
      ("p", "The sequencer records the strip and the pads, but not where the record sat. Loop Snap (SETUP, default On) fixes that: the record's position at the start of the take is remembered, and every time the loop restarts the record snaps back to it. To start a new take at a different position, pick another record while stopped, or switch Loop Snap Off and On."),
      ("h", "SETUP TAB"),
      ("p", "Strip Src, Strip Zone, Throw, Smooth, Lead, Strip Rel, Deck sample, Go Sticker, Cut curve, Ham Note, Shot Base, Master and Loop Snap. Anything on the BATTLE tab is not repeated here. The Q-Links follow the same layout."),
+     ("h", "EXPERIMENTAL"),
+     ("p", "Provided AS IS, with no warranty of any kind. Use at your own risk."),
 ],
 ]
 
@@ -70,6 +73,8 @@ for ci, col in enumerate(COLS):
         if kind == "h":
             y += 6
             d.text((x, y), text, font=fh, fill=RED if warn and "MPC" in text else GOLD); y += 23
+        elif kind == "l":
+            d.text((x, y), text, font=fp, fill=INK); y += 19
         else:
             for line in wrap(d, text, fp, W):
                 d.text((x, y), line, font=fp, fill=INK); y += 19

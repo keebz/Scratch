@@ -10,8 +10,8 @@
   "category": "Synth",
   "file32": "VST/scratch-arm32.so",
   "file64": "VST/scratch-arm64.so",
-  "description": "Scratch: a 4-voice synth for the MPC. Describe your plugin here.",
+  "description": "DJ scratch instrument: the touch strip is the record. Sample pads, crossfader, two-channel mixer with DJ EQ.",
   "author": "Keebz",
-  "url": "",
+  "url": "https://github.com/keebz/Scratch",
   "license": "MIT"
 }
