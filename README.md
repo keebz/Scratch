@@ -20,6 +20,9 @@
 
 </div>
 
+> [!IMPORTANT]
+> **Requires an MPC with a touch strip: the MPC Live III or the MPC XL (Gen 2 hardware), on MPC OS 3.10.1 or later.** Scratch was developed and tested on the **MPC Live III only**; the XL has the same kind of strip and should work, but it is **untested**. It is **not supported** on MPC models without a touch strip (Live, Live II, One, One+, X, Key 37/61, Force), because the record is played with the strip.
+
 > [!WARNING]
 > **Experimental software, provided "AS IS", with no warranty of any kind.** Use it at your own risk and back up your projects and your card first. External plugin support on the MPC is itself a beta feature. See the [disclaimer](#disclaimer).
 
@@ -62,7 +65,7 @@ Scratch turns the MPC Live III into a battle deck. A sample sits on a virtual re
 
 ## Install
 
-You need an **MPC Live III on MPC OS 3.10.1 or later** (Preferences → Info), an SD card or USB drive (or the MPC's internal drive in computer mode), and a computer.
+You need an **MPC Live III (or MPC XL, untested) with a touch strip, on MPC OS 3.10.1 or later** (Preferences → Info), an SD card or USB drive (or the MPC's internal drive in computer mode), and a computer.
 
 1. Download **`Keebz - Scratch v1_0.zip`** from the [Releases page](https://github.com/keebz/Scratch/releases) and unzip it. You get a **`VST2 Plugins`** folder holding one folder, **`Keebz - VST - Scratch`**, and the Quick Start PDF.
 2. Put the plugin on the drive:

@@ -192,7 +192,10 @@ def main():
     D.p("A DJ scratch instrument plugin for the Akai MPC Live III. The touch strip is the record: touch it to grab the record, "
         "slide to scratch, lift your finger and it plays on. Pads A01-A08 hold samples and double as the crossfader, there is a "
         "two-channel mixer with DJ EQ, and an on-screen turntable that follows your hands.", gap=18)
-    D.image(battle, caption="The BATTLE page (picture is a design mockup; fonts on the MPC differ slightly)")
+    D.image(battle, width=760, caption="The BATTLE page (picture is a design mockup; fonts on the MPC differ slightly)")
+    D.box("REQUIRES A TOUCH STRIP: MPC LIVE III OR MPC XL",
+          "Scratch needs an MPC with a touch strip: the MPC Live III or the MPC XL (Gen 2 hardware), on MPC OS 3.10.1 or later. It was developed and tested on the MPC Live III only. The XL has the same kind of strip and should work, but it is untested. It is not supported on MPC models without a touch strip (Live, Live II, One, One+, X, Key 37/61, Force), because the record is played with the strip.",
+          fill=(255, 244, 214), edge=(200, 140, 20))
     D.box("EXPERIMENTAL - PROVIDED \"AS IS\"",
           "Keebz Scratch is experimental software. It is provided \"AS IS\", without warranty of any kind, express or implied, "
           "including (but not limited to) warranties of merchantability, fitness for a particular purpose and non-infringement. "
@@ -203,7 +206,7 @@ def main():
 
     D.new_page()
     D.h1("1.  Install")
-    D.p("You need: an MPC Live III running MPC OS 3.10.1 or later (check in Preferences > Info), an SD card or USB drive "
+    D.p("You need: an MPC Live III (or MPC XL, untested) with its touch strip, running MPC OS 3.10.1 or later (check in Preferences > Info), an SD card or USB drive "
         "(or the MPC's internal drive in computer mode), and a computer.", gap=10)
     D.h2("A.  Your drive has no \"VST2 Plugins\" folder yet")
     D.step(1, "Unzip the downloaded file (Keebz - Scratch v1_0.zip) on your computer. Inside is one folder named VST2 Plugins, and inside that one folder named \"Keebz - VST - Scratch\".")
