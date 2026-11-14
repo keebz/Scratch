@@ -1,0 +1,39 @@
+{
+  "pages": [
+    {
+      "name": "MIXER",
+      "controls": [
+        { "param": "A Gain",  "widget": "knob" },
+        { "param": "A High",  "widget": "knob" },
+        { "param": "A Mid",   "widget": "knob" },
+        { "param": "A Low",   "widget": "knob" },
+        { "param": "B Gain",  "widget": "knob" },
+        { "param": "B High",  "widget": "knob" },
+        { "param": "B Mid",   "widget": "knob" },
+        { "param": "B Low",   "widget": "knob" },
+        { "param": "Cut Curve", "widget": "knob" },
+        { "param": "Hamster",   "widget": "switch" },
+        { "param": "Cut Note",  "widget": "knob" },
+        { "param": "Cut Learn", "widget": "switch" },
+        { "param": "Master",    "widget": "knob" }
+      ]
+    },
+    {
+      "name": "DECK",
+      "controls": [
+        { "param": "Deck Sample", "widget": "knob" },
+        { "param": "Platter",     "widget": "switch" },
+        { "param": "Sticker",     "widget": "switch" },
+        { "param": "Go Sticker",  "widget": "knob" },
+        { "param": "Strip Src",   "widget": "switch" },
+        { "param": "Scrub",       "widget": "knob" },
+        { "param": "Throw",       "widget": "knob" },
+        { "param": "Strip Rel",   "widget": "knob" },
+        { "param": "Shot Base",   "widget": "knob" },
+        { "param": "Smooth",      "widget": "knob" },
+        { "param": "Lead",        "widget": "knob" }
+      ]
+    }
+  ],
+  "style": { "background": "ff1e1d1e", "accent": "ffd31145", "text": "ffffffff", "muted": "ff6a6a6c" }
+}
